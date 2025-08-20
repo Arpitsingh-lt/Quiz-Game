@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1 class="heading"><i>Arpit Quiz Center</i></h1>
+  <div class="quiz-container">
+    <h1>Quiz Game</h1>
+    <div id="quiz">
+      <h2 id="question">Loading...</h2>
+      <ul>
+        <li><button class="option-btn" onclick="selectOption(this)"></button></li>
+        <li><button class="option-btn" onclick="selectOption(this)"></button></li>
+        <li><button class="option-btn" onclick="selectOption(this)"></button></li>
+        <li><button class="option-btn" onclick="selectOption(this)"></button></li>
+      </ul>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="result" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
